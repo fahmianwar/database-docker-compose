@@ -1,14 +1,14 @@
-#Postgre SQL
+# Postgre SQL
 PostgreSQL is one of the best SQL Database, and it is Open Source. It has been used by numerous organizations, if you know supabase, they use postgresql for the database. 
 You can modify anything from database secret to docker volumne name. To do so, create .env file in the same directory as the docker-compose.yml file, and add the required environment varibale with your desired value.
 
-DB_CONTAINER="docker-container-name"
-
-DB_DATABASE="yourdatabasenname"
+> DB_CONTAINER="docker-container-name"
+> DB_DATABASE="yourdatabasenname"
 
 DB_USERNAME="yourdatabaseuser"
 
 DB_PASSWORD="yourdatabasepassword"
+$$
 
 For instance, the line POSTGRES_DB=${DB_DATABASE:-postgres} utilizes DB_DATABASE variable from the environment variable file (.env) to set the POSTGRES_DB, and if the variable does not exist, it defaullt to postgres.
 
