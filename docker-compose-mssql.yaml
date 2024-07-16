@@ -14,4 +14,4 @@ services:
       - MSSQL_SA_PASSWORD=${DB_PASSWORD:-password}
       - ACCEPT_EULA=Y
     volumes:
-      - sql-server:/var/opt/mssql
+      - ${DB_CONTAINER:-mssql}:/var/opt/mssql
