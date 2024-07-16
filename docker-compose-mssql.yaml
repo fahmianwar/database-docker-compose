@@ -2,7 +2,7 @@ version: "3"
 
 volumes:
   sql-server:
-    name: ${DB_CONTAINER:-sql-server}
+    name: ${DB_CONTAINER:-mssql}
 
 services:
   sql-server:
